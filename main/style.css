@@ -1,0 +1,49 @@
+body {
+    background-color: #D0E4F5;
+background-image: url("https://images.pexels.com/photos/2940654/pexels-photo-2940654.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: 50% 50%;
+margin: 0;
+}
+
+.header{
+    color: aliceblue;
+    text-align: center;
+    background-color: rebeccapurple ;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;     /* Con este overflow se soluciona el error en que el header se mueve al incluir el h1 (Errores de padres-hijos) */
+}
+
+.div-1 {
+    width: 500px;
+    margin-left: 50px;
+    margin-right: auto;
+    color: blanchedalmond;
+    border: 10px outset #816b23;
+    border-radius: 10px;
+    background-color: olive;
+    display:inline-block ;
+}
+
+.image-1 {
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+    margin-left: 15%;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+.div-2 {
+    width: 500px;
+    margin-left: 50%;
+    margin-right: auto;
+    margin-top: 50px;
+    color: blanchedalmond;
+    border: 10px outset #816b23;
+    border-radius: 10px;
+    background-color: olive;
+    display:inline-block ;
+}
