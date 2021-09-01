@@ -8,6 +8,13 @@ background-position: 50% 50%;
 margin: 0;
 }
 
+.intro {
+    width: 100%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+
+}
 .header{
     color: aliceblue;
     text-align: center;
@@ -20,7 +27,6 @@ margin: 0;
 
 .menu {
     margin-left: 37%;
-
 }
 
 .menu li {
@@ -127,4 +133,12 @@ margin: 0;
     display:inline-block ;
     padding-left: 1%;
     padding-right: 1%;
+}
+
+h1 {
+    font-family: 'Gill Sans MT';
+}
+
+p {
+    font-family: fantasy;
 }
