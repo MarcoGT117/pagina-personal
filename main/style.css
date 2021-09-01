@@ -69,11 +69,20 @@ margin: 0;
 }
 
 .image-2 {
-    display: inline-block;
+    display: flex;
     height: 25%;
     width: 25%;
     margin-left: 15%;
     margin-top: -500px;
+    border: 10px ridge #3f2600;
+}
+
+.image-3 {
+    display: inline-block;
+    height: 33%;
+    width: 33%;
+    margin-left: 60%;
+    margin-bottom: -500px;
     border: 10px ridge #3f2600;
 }
 
@@ -82,6 +91,35 @@ margin: 0;
     margin-left: 50%;
     margin-right: auto;
     margin-top: 50px;
+    color: blanchedalmond;
+    border: 10px outset #816b23;
+    border-radius: 10px;
+    background-color: olive;
+    display:inline-block ;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.div-4, .div-5 {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: auto;
+    color: blanchedalmond;
+    border: 10px outset #816b23;
+    border-radius: 10px;
+    background-color: olive;
+    padding-left: 1%;
+    padding-right: 1%;    
+}
+
+.div-6 {
+    display: inline;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 33%;
+    margin-right: 25%;
+    margin-bottom: 50px;
     color: blanchedalmond;
     border: 10px outset #816b23;
     border-radius: 10px;
