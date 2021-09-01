@@ -1,6 +1,7 @@
 body {
     background-color: #D0E4F5;
 background-image: url("https://images.pexels.com/photos/2940654/pexels-photo-2940654.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+background-size: 100%;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: 50% 50%;
@@ -14,7 +15,36 @@ margin: 0;
     height: 100px;
     margin-bottom: 20px;
     overflow: hidden;     /* Con este overflow se soluciona el error en que el header se mueve al incluir el h1 (Errores de padres-hijos) */
+    height: max-content;
 }
+
+.menu {
+    margin-left: 37%;
+
+}
+
+.menu li {
+    margin:0;
+    display: inline;
+    float:left;
+    padding:0 10px;
+    /* background-color: #816b23; */
+    
+}
+
+ button {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+
+} 
 
 .div-1 {
     width: 500px;
@@ -25,6 +55,8 @@ margin: 0;
     border-radius: 10px;
     background-color: olive;
     display:inline-block ;
+    padding-left: 1%;
+    padding-right: 1%;    
 }
 
 .image-1 {
@@ -33,10 +65,19 @@ margin: 0;
     width: 25%;
     margin-left: 15%;
     margin-top: 50px;
-    z-index: -1;
+    border: 10px ridge #3f2600;
 }
 
-.div-2 {
+.image-2 {
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+    margin-left: 15%;
+    margin-top: -500px;
+    border: 10px ridge #3f2600;
+}
+
+.div-2, .div-3 {
     width: 500px;
     margin-left: 50%;
     margin-right: auto;
@@ -46,4 +87,6 @@ margin: 0;
     border-radius: 10px;
     background-color: olive;
     display:inline-block ;
+    padding-left: 1%;
+    padding-right: 1%;
 }
