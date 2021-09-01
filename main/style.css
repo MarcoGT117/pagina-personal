@@ -26,7 +26,8 @@ margin: 0;
 }
 
 .menu {
-    margin-left: 37%;
+    margin-left: 33%;
+    margin-right: 33%;
 }
 
 .menu li {
@@ -136,9 +137,17 @@ margin: 0;
 }
 
 h1 {
-    font-family: 'Gill Sans MT';
+    font-family: 'Georgia';
+}
+
+h2 {
+    font-family: "gill sans MT";
 }
 
 p {
+    font-family: fantasy;
+}
+
+button{
     font-family: fantasy;
 }
