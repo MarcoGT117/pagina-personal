@@ -9,6 +9,10 @@ margin: 0;
 }
 
 .intro {
+    color: aliceblue;
+    text-align: center;
+    background-color: rebeccapurple ;
+    height: max-content;
     width: 100%;
     top: 0;
     position: -webkit-sticky;
@@ -16,13 +20,10 @@ margin: 0;
 
 }
 .header{
-    color: aliceblue;
-    text-align: center;
-    background-color: rebeccapurple ;
-    height: 100px;
+    /* height: max-content; */
     margin-bottom: 20px;
     overflow: hidden;     /* Con este overflow se soluciona el error en que el header se mueve al incluir el h1 (Errores de padres-hijos) */
-    height: max-content;
+    /* height: max-content; */
 }
 
 .menu {
@@ -39,24 +40,11 @@ margin: 0;
     
 }
 
- button {
-    font-family: Georgia, serif;
-    font-size: 15px;
-    letter-spacing: 0px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-
-} 
-
 .div-1 {
-    width: 500px;
+    /* width: 500px;
     margin-left: 50px;
-    margin-right: auto;
+    margin-right: auto; */
+    margin-top: 3em;
     color: blanchedalmond;
     border: 10px outset #816b23;
     border-radius: 10px;
@@ -68,8 +56,8 @@ margin: 0;
 
 .image-1 {
     display: inline-block;
-    height: 25%;
-    width: 25%;
+    height: 75%;
+    width: 75%;
     margin-left: 15%;
     margin-top: 50px;
     border: 10px ridge #3f2600;

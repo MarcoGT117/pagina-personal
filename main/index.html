@@ -1,78 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Pagina personal</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="intro">
-
-    <header class="header"> <h1>Antigua Roma</h1> 
-        <ul class="menu"> 
+      <header class="header">
+        <h1>Antigua Roma</h1>
+        <!-- navs -->
+    <ul class="nav nav-pills" style="background-color: rebeccapurple; position: fixed; width: 100%;" >
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle active"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Curiosidades</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#curiosidad-1">Curiosidad #1</a></li>
+            <li><a class="dropdown-item" href="#curiosidad-2">Curiosidad #2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#fundacion">Fundacion y leyenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#gobierno">Gobierno</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " href="#idioma" tabindex="-1" aria-disabled="true">Idioma</a>
+        </li>
+      </ul>
+        <!-- <ul class="menu"> 
         <li><button><a href="#fundacion">Fundacion y leyenda</a></button></li>
         <li><button><a href="#gobierno">Gobierno</a></button></li>
         <li><button><a href="#idioma">Idioma</a></button></li>
-    </ul>
-    </header>
-    
-    </div>
-    
-    <div id="fundacion" class="div-1">
-        <h2>Fundacion y leyenda</h2>
-        <p>
-            Se puede decir que todos hemos escuchado el nombre de Roma, algunos mas habran escuchado sobre como los gemelos fundadores de esta ciudad ,Romulo y Remo, fueron amamantados por una loba. Incluso el primer emperador de Roma mando a escribir un libro, La Eneida, para relacionar su origen con La Odisea y la guerra de Troya, sin embargo, los descubrimientos arquelogicos hasta la fecha indican que la ciudad no puede ser mas antigua que el 600 a.C, en comparacion con la leyende de los gemelos donde dice que se fundo el 753 a.C.
-        </p>
+    </ul> menu original -->
+      </header>
     </div>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Peter_Paul_Rubens_-_Romulus_and_Remus_-_Google_Art_Project.jpg" alt="luperca" class="image-1">
+    
 
-    <div id="gobierno" class="div-2">
-        <h2>Gobierno</h2>
-        <p>
-            Si bien en la actualidad es muy facil asociar Roma con el Imperio Romano, no siempre fue asi, en sus inicios ydurante un periodo de 274 años, Roma fue una monarquia, si bien tradicionalmente hubo siete reyes, es posible que la mayoria sean ficticios y que hayan existido incluso mas. Posteriormente hicieron una transicion a una republica, donde un senado y consules eran los encargados de las decisiones politicas del territorio, el fin de la republica vino con la rebelion de Julio Cesar, co-consul, quien se apodero de la ciudad tras el exilio autoimpuesto de Pompeyo Magno, su compañero co-consul, tras la guerra, el senado nombro a Cesar Dictator, un cargo que otorgaba poder absoluto durante un tiempo limitado, modifico leyes en favor de la plebe de Roma quitando poder a los patricios.
-        </p>
+    <!-- Columns divs -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">    
+                <div class="div-1">
+                <h2 id="fundacion">Fundacion y leyenda</h2>
+                <p>
+                  Se puede decir que todos hemos escuchado el nombre de Roma, algunos mas
+                  habran escuchado sobre como los gemelos fundadores de esta ciudad
+                  ,Romulo y Remo, fueron amamantados por una loba. Incluso el primer
+                  emperador de Roma mando a escribir un libro, La Eneida, para relacionar
+                  su origen con La Odisea y la guerra de Troya, sin embargo, los
+                  descubrimientos arquelogicos hasta la fecha indican que la ciudad no
+                  puede ser mas antigua que el 600 a.C, en comparacion con la leyende de
+                  los gemelos donde dice que se fundo el 753 a.C.
+                </p>
+              </div>
+            </div>
+            <div class="col-6"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Peter_Paul_Rubens_-_Romulus_and_Remus_-_Google_Art_Project.jpg"
+                alt="luperca"
+                class="image-1"
+              /></div>
+          </div>
+        </div>
+
+
+
+    
+
+    <div class="div-2">
+      <h2 id="gobierno">Gobierno</h2>
+      <p>
+        Si bien en la actualidad es muy facil asociar Roma con el Imperio
+        Romano, no siempre fue asi, en sus inicios ydurante un periodo de 274
+        años, Roma fue una monarquia, si bien tradicionalmente hubo siete reyes,
+        es posible que la mayoria sean ficticios y que hayan existido incluso
+        mas. Posteriormente hicieron una transicion a una republica, donde un
+        senado y consules eran los encargados de las decisiones politicas del
+        territorio, el fin de la republica vino con la rebelion de Julio Cesar,
+        co-consul, quien se apodero de la ciudad tras el exilio autoimpuesto de
+        Pompeyo Magno, su compañero co-consul, tras la guerra, el senado nombro
+        a Cesar Dictator, un cargo que otorgaba poder absoluto durante un tiempo
+        limitado, modifico leyes en favor de la plebe de Roma quitando poder a
+        los patricios.
+      </p>
     </div>
 
     <div class="div-3">
-        <p>
-            Varios senadores planearon la muerte de Cesar, a quienes consideraban un tirano y que ademas les habia quitado beneficios. Cesar murio apuñalado por varios senadores en el senado. Tras su muerte Cesar en su testamento adopto a su sobrino Octavio como su hijo propio. A pesar de la conmocion, se llegaron a acuerdos entre los senadores y el general Marco Antonio, mano derecha de Cesar y quien ahora tenia el mando de las legiones de Cesar. Durante los años siguientes sucedieron dos guerras civiles mas, quedando al final Octavio, hijo adoptivo de Cesar, como Imperator cambiando su nombre a Cesar Augusto, asi dio inicio la era imperial de Roma.
-        </p>
+      <p>
+        Varios senadores planearon la muerte de Cesar, a quienes consideraban un
+        tirano y que ademas les habia quitado beneficios. Cesar murio apuñalado
+        por varios senadores en el senado. Tras su muerte Cesar en su testamento
+        adopto a su sobrino Octavio como su hijo propio. A pesar de la
+        conmocion, se llegaron a acuerdos entre los senadores y el general Marco
+        Antonio, mano derecha de Cesar y quien ahora tenia el mando de las
+        legiones de Cesar. Durante los años siguientes sucedieron dos guerras
+        civiles mas, quedando al final Octavio, hijo adoptivo de Cesar, como
+        Imperator cambiando su nombre a Cesar Augusto, asi dio inicio la era
+        imperial de Roma.
+      </p>
     </div>
-    <img class="image-2" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg" alt="augusto">
-    
-    <img class="image-3" src="https://cdn-0.infolibros.org/wp-content/uploads/2020/03/Lat%C3%ADn.jpg?ezimgfmt=rs:795x475/rscb33/ng:webp/ngcb33" alt="latin">
+    <img
+      class="image-2"
+      src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg"
+      alt="augusto"
+    />
+
+    <img
+      class="image-3"
+      src="https://cdn-0.infolibros.org/wp-content/uploads/2020/03/Lat%C3%ADn.jpg?ezimgfmt=rs:795x475/rscb33/ng:webp/ngcb33"
+      alt="latin"
+    />
 
     <div class="div-4">
-        <h2 id="idioma">Idioma</h2>
-        <p>
-            El idioma hablado era el Latin, hoy dia considerado una lengua muerta ya que no existen hablantes nativos de este idioma. Quizas te suene ya que esta relacionado a la liturgia catolica, e incluso a la hechiceria, sin embargo este idioma sufrio muchos cambios a lo largo del tiempo, tanto por la inmigracion y anexion de otros pueblos al imperio como por el uso mas comun de ciertas palabras, esto derivo en la division entre el latin culto y el latin vulgar, el culto siendo hablado por filosofos y estadistas, y el vulgar por la plebe y los pueblos conquistados. 
-        </p>
+      <h2 id="idioma">Idioma</h2>
+      <p>
+        El idioma hablado era el Latin, hoy dia considerado una lengua muerta ya
+        que no existen hablantes nativos de este idioma. Quizas te suene ya que
+        esta relacionado a la liturgia catolica, e incluso a la hechiceria, sin
+        embargo este idioma sufrio muchos cambios a lo largo del tiempo, tanto
+        por la inmigracion y anexion de otros pueblos al imperio como por el uso
+        mas comun de ciertas palabras, esto derivo en la division entre el latin
+        culto y el latin vulgar, el culto siendo hablado por filosofos y
+        estadistas, y el vulgar por la plebe y los pueblos conquistados.
+      </p>
     </div>
 
-    
     <div class="div-5">
-        <p>
-            Tras la caida del Imperio Romano de Occidente a principios del siglo VI, el latin se mantuvo para los textos academicos y religiosos, mientras que el latin vulgar fue derivando en las lenguas romances: el español, portugues, frances, italiano y rumano, de los cuales hereda algunas palabras y estructuras dependiendo de a que lengua romance nos estemos refiriendo.
-        </p>
-        <p>
-            Mas de una vez habras leido o escuchado alguna palabra de estos idiomas y te parecen familiares. si te interesa escuchar una de las aproximaciones a como sonaba el latin haz click en <a href="https://youtu.be/mPuEO0VAh04?t=16">este enlace</a> para ver un fragmento de la serie <i>Barbaren</i> de Netflix en el cual algunos actores hablan latin.
-        </p>
+      <p>
+        Tras la caida del Imperio Romano de Occidente a principios del siglo VI,
+        el latin se mantuvo para los textos academicos y religiosos, mientras
+        que el latin vulgar fue derivando en las lenguas romances: el español,
+        portugues, frances, italiano y rumano, de los cuales hereda algunas
+        palabras y estructuras dependiendo de a que lengua romance nos estemos
+        refiriendo.
+      </p>
+      <p>
+        Mas de una vez habras leido o escuchado alguna palabra de estos idiomas
+        y te parecen familiares. si te interesa escuchar una de las
+        aproximaciones a como sonaba el latin haz click en
+        <a href="https://youtu.be/mPuEO0VAh04?t=16">este enlace</a> para ver un
+        fragmento de la serie <i>Barbaren</i> de Netflix en el cual algunos
+        actores hablan latin.
+      </p>
     </div>
-    
+
     <div class="div-6">
-        <h2>Curiosidad #1</h2>
-        <p>
-            Una de las palabras donde se muestra la imposicion de una palabra del latin vulgar sobre la del culto es en el español "Caballo", en el latin culto esta es <i>equus</i>, cuyo uso aun vemos en palabras como "equitacion" o  "ecuestre", <i>equus</i> hacia referencia a los caballos reacios, usados principalmente por el ejercito y la aristocracia. Otra palabra era <i>caballus</i>, mas parecida al español "caballo", la cual hacia referencia a los caballos castrados usados principalmente por campesinos para labores del campo o cualquier otra actividad asociada a la plebe. Finalmente muchas lenguas romances adoptaron su propia version de <i>caballus</i> debido a que su uso era mas extendido debido a que era la palabra que el pueblo en general usaba.
-        </p>
+      <h2 id="curiosidad-1">Curiosidad #1</h2>
+      <p>
+        Una de las palabras donde se muestra la imposicion de una palabra del
+        latin vulgar sobre la del culto es en el español "Caballo", en el latin
+        culto esta es <i>equus</i>, cuyo uso aun vemos en palabras como
+        "equitacion" o "ecuestre", <i>equus</i> hacia referencia a los caballos
+        reacios, usados principalmente por el ejercito y la aristocracia. Otra
+        palabra era <i>caballus</i>, mas parecida al español "caballo", la cual
+        hacia referencia a los caballos castrados usados principalmente por
+        campesinos para labores del campo o cualquier otra actividad asociada a
+        la plebe. Finalmente muchas lenguas romances adoptaron su propia version
+        de <i>caballus</i> debido a que su uso era mas extendido debido a que
+        era la palabra que el pueblo en general usaba.
+      </p>
     </div>
-</body>
+  </body>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
 </html>
