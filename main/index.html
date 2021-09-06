@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/main/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/main/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/main/icons/favicon-16x16.png">
+    <link rel="manifest" href="/main/icons/site.webmanifest">
     <title>Pagina personal</title>
 </head>
 
@@ -16,14 +20,6 @@
             <h1>Antigua Roma</h1>
             <!-- navs -->
             <ul class="nav nav-pills justify-content-center" style="background-color: rebeccapurple; width: 100%;">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false">Curiosidades</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#curiosidad-1">Curiosidad #1</a></li>
-                        <li><a class="dropdown-item" href="#curiosidad-2">Curiosidad #2</a></li>
-                    </ul>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#fundacion">Fundacion y leyenda</a>
                 </li>
@@ -32,6 +28,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active " href="#idioma" tabindex="-1" aria-disabled="true">Idioma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active " href="#religion" tabindex="-1" aria-disabled="true">Religion</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Curiosidades</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#curiosidad-1">Curiosidad #1</a></li>
+                        <li><a class="dropdown-item" href="#curiosidad-2">Curiosidad #2</a></li>
+                    </ul>
                 </li>
             </ul>
     </div>
@@ -159,21 +166,35 @@
         </p>
     </div>
 
-    <div class="div-7">
-        <h2 class="religion">Religion</h2>
+    <div class="container">
+        <!-- Fila 1 -->
+        <div class="row">
+        <div class="col-6"><div class="div-7">
+            <h2 id="religion">Religion</h2>
+            <p>
+                El panteon romano bebio mucho de la mitologia griega, por lo que la mayoria de los dioses romanos cuentan con homologos griegos, por ejemplo el de Jupiter siendo Zeus, o el de Venus siendo Afrodita, o el de Mercurio siendo Hermes. Como habras notado, muchos de los nombres de los dioses romanos estan asociados hoy dia a los planetas de nuestro sistema solar. <br>
+                A pesar de que la religion de la antigua Roma no es tan conocida, para los romanos era muy importante, varios templos edificados a distintas deidades llegaron a adornar la ciudad, a Venus, Marte, Jupiter Capitolino, etc. Ademas, era muy comun encontrar sacerdotes rondando la ciudad, asi como pequeñas capillas. Tambien era comun comenzar alguna actividad encomendandose o realizando algun sacrificio a alguna deidad, por ejemplo uno de estos rituales es la <i>Suovitaurilia</i>, donde se pedia a Marte por la bendicion y purificacion de la tierra, en ella se sacrificaban tres animales machos, un cerdo <i>(sus)</i>, un cordero <i>(ovis)</i> y un ternero <i>(taurus)</i>.
+            </p>
+            <p>
+                Con la llegada del cristianismo comenzo la persecucion a los cristianos durante algun tiempo, posteriormente la religion fue aceptada dentro del imperio y mas tarde el emperador Constantino promulgo que seria la religion oficial del imperio.
+            </p>
+        </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="col-6">
+            <img class="image-4" src="https://apiederiscoinfancia.files.wordpress.com/2018/05/dioses-romanos.jpg" alt="dioses">
+        </div>
+      </div>
+
+    
+    
+
+    <div class="div-8">
+        <h2 id="curiosidad-2" >Curiosidad #2</h2>
         <p>
-            El panteon romano bebio mucho de la mitologia griega, por lo que la mayoria de los dioses romanos cuentan con homologos griegos, por ejemplo el de Jupiter siendo Zeus, o el de Venus siendo Afrodita, o el de Mercurio siendo Hermes. Como habras notado, muchos de los nombres de los dioses romanos estan asociados hoy dia a los planetas de nuestro sistema solar. <br>
-            A pesar de que la religion de la antigua Roma no es tan conocida, para los romanos era muy importante, varios templos edificados a distintas deidades llegaron a adornar la ciudad, a Venus, Marte, Jupiter Capitolino, etc. Ademas, era muy comun encontrar sacerdotes rondando la ciudad, asi como pequeñas capillas. Tambien era comun comenzar alguna actividad encomendandose o realizando algun sacrificio a alguna deidad, para algun negocio se hacia una pequeña fiesta consagrada a Juno o para la guerra era comun el ritual de <i>Suavetaurillius</i>, donde se pedia fuerza a Marte y se sacrificaba un toro.
-        </p>
-        <p>
-            Con la llegada del cristianismo comenzo la persecucion a los cristianos durante algun tiempo, posteriormente la religion fue aceptada dentro del imperio y mas tarde el emperador Constantino promulgo que seria la religion oficial del imperio. Cuenta la leyenda que en una batalla tuvo la vision en la que escucho una voz: <i>Ad hoc signo vinces</i>, bajo este simbolo venceras, mientres vio el crismon, un simbolo con la primer y ultimo letra de Cristo en griego, pinto dicho simbolo en los escudos de su ejercito, sin embargo, lo mas probable es que haya pactado ayuda con alguna faccion cristiana que brindo apoyo en el campo de batalla.
+            El cristianismo heredo varios de los titulos de los lideres religiosos de la antigua Roma, tal es el caso de Pontifice, que era el cargo de la cabeza del templo a Jupiter Capitolino, mas tarde, el Papa termino obteniendo tambien esta denominacion, tambien se cree que el termino "Papa" es un acronimo en latin: <i>Petri Apostoli Potestatem Accipiens</i>.
         </p>
     </div>
-
-    <div class="div-8">Curiosidad #2</div>
-    <p>
-        El cristianismo heredo varios de los titulos de los lideres religiosos de la antigua Roma, tal es el caso de Pontifice, que era el cargo de la cabeza del templo a Jupiter Capitolino, mas tarde, el Papa termino obteniendo tambien esta denominacion.
-    </p>
 
 </body>
 
